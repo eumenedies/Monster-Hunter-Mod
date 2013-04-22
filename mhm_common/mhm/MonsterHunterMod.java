@@ -1,6 +1,7 @@
 package mhm;
 
 //import mhm.item.ItemBroadSword;
+import mhm.item.ItemBroadSword;
 import mhm.lib.Reference;
 import net.minecraft.item.Item;
 import cpw.mods.fml.common.Mod;
@@ -20,8 +21,9 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 @NetworkMod(clientSideRequired = true, serverSideRequired = false)
 public class MonsterHunterMod {
 
-    public static Item broadSword;
     public final static int ITEM_ID = 5000;
+    public static Item broadSword = new ItemBroadSword(ITEM_ID);
+    
 
     @Instance(Reference.MOD_ID)
     public static MonsterHunterMod instance;
@@ -39,8 +41,6 @@ public class MonsterHunterMod {
     public void load(FMLInitializationEvent event)
     {
 
-        proxy.initMod();
-        // broadSword = new ItemBroadSword(5000);
 
         LanguageRegistry.addName(broadSword, "Broad Sword");
 

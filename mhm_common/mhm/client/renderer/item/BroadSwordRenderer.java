@@ -45,6 +45,7 @@ public class BroadSwordRenderer implements IItemRenderer {
             case EQUIPPED:
             {
                 renderSword(0.0F, 0.0F, 1.0F, 1.0F);
+
                 return;
             }
             default:
@@ -65,7 +66,7 @@ public class BroadSwordRenderer implements IItemRenderer {
 
         // Bind texture
         FMLClientHandler.instance().getClient().renderEngine
-                .bindTexture("/mods/mhm/textures/models/demonsword.png");
+        .bindTexture("/mods/mhm/textures/models/demonsword.png");
 
         // Render
         modelBroadSword.render();

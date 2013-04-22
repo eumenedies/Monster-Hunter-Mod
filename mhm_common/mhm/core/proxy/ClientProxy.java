@@ -10,7 +10,7 @@ public class ClientProxy extends CommonProxy {
     public void initRenderingAndTextures()
     {
 
-        MinecraftForgeClient.registerItemRenderer(MonsterHunterMod.ITEM_ID,
+        MinecraftForgeClient.registerItemRenderer(MonsterHunterMod.ITEM_ID+256,
                 new BroadSwordRenderer());
 
     }

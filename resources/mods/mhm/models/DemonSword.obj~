@@ -1,7 +1,7 @@
 # Blender v2.63 (sub 0) OBJ File: ''
 # www.blender.org
 mtllib DemonSword.mtl
-#o Crest_Torus.001
+o Crest_Torus.001
 v 0.005679 4.431758 -0.047090
 v -0.000584 3.427791 -0.042010
 v -0.042057 3.428113 -0.029363

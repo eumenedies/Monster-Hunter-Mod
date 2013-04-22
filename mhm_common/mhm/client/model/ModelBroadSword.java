@@ -13,7 +13,7 @@ public class ModelBroadSword extends ModelBase {
     public ModelBroadSword()
     {
         modelBroadSword = AdvancedModelLoader
-                .loadModel("/mods/mhm/models/DemonSword.obj");
+                .loadModel("/mods/mhm/models/Sword.obj");
     }
 
     public void render()
