@@ -66,7 +66,7 @@ public class BroadSwordRenderer implements IItemRenderer {
 
         // Bind texture
         FMLClientHandler.instance().getClient().renderEngine
-        .bindTexture("/mods/mhm/textures/models/demonsword.png");
+        .bindTexture("/mods/mhm/textures/models/AxeColor.jpg");
 
         // Render
         modelBroadSword.render();
