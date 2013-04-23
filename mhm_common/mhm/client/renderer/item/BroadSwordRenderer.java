@@ -44,7 +44,7 @@ public class BroadSwordRenderer implements IItemRenderer {
         {
             case EQUIPPED:
             {
-                renderSword(0.0F, 0.0F, 1.0F, 1.0F);
+                renderSword(-2.2F, 3.5F, 0.0F, 1.0F);
 
                 return;
             }
@@ -62,7 +62,7 @@ public class BroadSwordRenderer implements IItemRenderer {
         // Scale, Translate, Rotate
         GL11.glScalef(scale, scale, scale);
         GL11.glTranslatef(x, y, z);
-        GL11.glRotatef(-90F, 1F, 0, 0);
+        GL11.glRotatef(-140F, 0F, 0F, 1F);
 
         // Bind texture
         FMLClientHandler.instance().getClient().renderEngine
