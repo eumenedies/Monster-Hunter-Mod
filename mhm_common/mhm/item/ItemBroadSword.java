@@ -4,9 +4,8 @@ import mhm.lib.Reference;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.EnumToolMaterial;
-import net.minecraft.item.ItemSword;
 
-public class ItemBroadSword extends ItemSword {
+public class ItemBroadSword extends MHMSwordAndShield {
 
     public ItemBroadSword(int id)
     {

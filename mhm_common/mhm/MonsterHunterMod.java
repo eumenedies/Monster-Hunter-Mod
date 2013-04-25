@@ -23,7 +23,6 @@ public class MonsterHunterMod {
 
     public final static int ITEM_ID = 5000;
     public static Item broadSword = new ItemBroadSword(ITEM_ID);
-    
 
     @Instance(Reference.MOD_ID)
     public static MonsterHunterMod instance;
@@ -41,11 +40,11 @@ public class MonsterHunterMod {
     public void load(FMLInitializationEvent event)
     {
 
-
         LanguageRegistry.addName(broadSword, "Broad Sword");
 
         GameRegistry.registerItem(broadSword, "BroadSword");
 
+        proxy.registerHandlers();
         proxy.initRenderingAndTextures();
 
     }
