@@ -1,0 +1,38 @@
+# Blender MTL File: 'viking_props.blend'
+# Material Count: 3
+newmtl Blade_Sword.png
+Ns 749.999996
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.950000 0.950000 0.950000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /home/james/.cache/.fr-YEeZHk/Sword.png
+map_Bump /home/james/.cache/.fr-YEeZHk/Sword.png
+
+
+newmtl Sword_L_Sword.png
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.064007 0.027299 0.016605
+Ks 0.014757 0.006583 0.003730
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /home/james/.cache/.fr-YEeZHk/Sword.png
+map_Bump /home/james/.cache/.fr-YEeZHk/Sword_normals.png
+
+
+newmtl Sword_M_Sword.png
+Ns 154.901961
+Ka 0.000000 0.000000 0.000000
+Kd 0.336012 0.287226 0.104556
+Ks 0.735546 0.650266 0.367937
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /home/james/.cache/.fr-YEeZHk/Sword.png
+map_Bump /home/james/.cache/.fr-YEeZHk/Sword_normals.png
+
+

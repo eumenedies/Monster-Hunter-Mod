@@ -1,0 +1,38 @@
+# Blender MTL File: 'viking_props.blend'
+# Material Count: 3
+newmtl Shield_L
+Ns 17.647059
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.100000 0.100000 0.100000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /home/james/Pictures/templates/shield.png
+map_Bump /home/james/Pictures/templates/Shield_normals.png
+
+
+newmtl Shield_M
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.900000 0.900000 0.900000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /home/james/Pictures/templates/shield.png
+map_Bump /home/james/Pictures/templates/Shield_normals.png
+
+
+newmtl Wood_shield
+Ns 37.254902
+Ka 0.000000 0.000000 0.000000
+Kd 0.095417 0.008906 0.008906
+Ks 0.042150 0.001670 0.002744
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /home/james/Pictures/templates/shield_wood.png
+map_Bump /home/james/Pictures/templates/shield_wood.png
+
+

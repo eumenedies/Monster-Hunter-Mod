@@ -7,18 +7,18 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 @SideOnly(Side.CLIENT)
-public class ModelBroadSword extends ModelBase {
-    private IModelCustom modelBroadSword;
+public class ModelShield extends ModelBase {
+    private IModelCustom modelShield;
 
-    public ModelBroadSword()
+    public ModelShield()
     {
-        modelBroadSword = AdvancedModelLoader
-                .loadModel("/mods/mhm/models/sword.obj");
+        modelShield = AdvancedModelLoader
+                .loadModel("/mods/mhm/models/shield.obj");
     }
 
     public void render()
     {
-        modelBroadSword.renderAll();
+        modelShield.renderAll();
     }
 
 }

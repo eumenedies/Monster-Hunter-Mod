@@ -1,6 +1,7 @@
 package mhm.client.renderer.item;
 
 import mhm.client.model.ModelBroadSword;
+import mhm.client.model.ModelShield;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.IItemRenderer;
 
@@ -11,11 +12,14 @@ import cpw.mods.fml.client.FMLClientHandler;
 public class BroadSwordRenderer implements IItemRenderer {
 
     protected ModelBroadSword modelBroadSword;
+    protected ModelShield modelShield;
 
     public BroadSwordRenderer()
     {
         modelBroadSword = new ModelBroadSword();
+        modelShield = new ModelShield();
     }
+
 
     @Override
     public boolean handleRenderType(ItemStack item, ItemRenderType type)
@@ -44,7 +48,8 @@ public class BroadSwordRenderer implements IItemRenderer {
         {
             case EQUIPPED:
             {
-                renderSword(-2.2F, 3.5F, 0.0F, 1.0F);
+                renderSword(-2.3F, -4.5F, 0.0F, 1.0F);
+                //renderShield(1.0F, 1.6F, -0.0F, 0.5F);
 
                 return;
             }
@@ -60,9 +65,9 @@ public class BroadSwordRenderer implements IItemRenderer {
         GL11.glPushMatrix();
 
         // Scale, Translate, Rotate
+        GL11.glRotatef(-140F, 0F, 0F, 1F);
         GL11.glScalef(scale, scale, scale);
         GL11.glTranslatef(x, y, z);
-        GL11.glRotatef(-140F, 0F, 0F, 1F);
 
         // Bind texture
         FMLClientHandler.instance().getClient().renderEngine
@@ -70,6 +75,26 @@ public class BroadSwordRenderer implements IItemRenderer {
 
         // Render
         modelBroadSword.render();
+
+        GL11.glPopMatrix();
+    }
+
+    private void renderShield(float x, float y, float z, float scale)
+    {
+
+        GL11.glPushMatrix();
+
+        // Scale, Translate, Rotate
+        GL11.glRotatef(90.0F, 1.0F, 0.0F, 0.0F);
+        GL11.glScalef(scale, scale, scale);
+        GL11.glTranslatef(x, y, z);
+
+        // Bind texture
+        FMLClientHandler.instance().getClient().renderEngine
+        .bindTexture("/mods/mhm/textures/models/AxeColor.jpg");
+
+        // Render
+        modelShield.render();
 
         GL11.glPopMatrix();
     }
