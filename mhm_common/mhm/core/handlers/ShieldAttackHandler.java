@@ -13,13 +13,17 @@ public class ShieldAttackHandler {
     {
         if (event.target instanceof EntityLiving)
         {
-            if (!(event.target instanceof EntityVillager)){
+            if (!(event.target instanceof EntityVillager))
+            {
                 if (event.entityPlayer.inventory.getCurrentItem() != null)
                 {
-                    if(event.entityPlayer.inventory.getCurrentItem().itemID == MonsterHunterMod.broadSword.itemID)
-                {
-                
-                    event.target.setFire(15);
-                }}}}}
-    }
+                    if (event.entityPlayer.inventory.getCurrentItem().itemID == MonsterHunterMod.broadSword.itemID)
+                    {
 
+                        event.target.setFire(15);
+                    }
+                }
+            }
+        }
+    }
+}

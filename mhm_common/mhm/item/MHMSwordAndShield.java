@@ -1,6 +1,10 @@
 package mhm.item;
 
+import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.passive.EntityVillager;
 import net.minecraft.item.EnumToolMaterial;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 
 public class MHMSwordAndShield extends ItemSword {
@@ -8,7 +12,19 @@ public class MHMSwordAndShield extends ItemSword {
     public MHMSwordAndShield(int par1, EnumToolMaterial par2EnumToolMaterial)
     {
         super(par1, par2EnumToolMaterial);
-        // TODO Auto-generated constructor stub
+    }
+    
+    public boolean itemInteractionForEntity(ItemStack itemStack, EntityLiving entity)
+    {
+        if (entity instanceof EntityLiving && !(entity instanceof EntityVillager))
+        {
+            entity.setVelocity(0, 5, 0);
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 
 }

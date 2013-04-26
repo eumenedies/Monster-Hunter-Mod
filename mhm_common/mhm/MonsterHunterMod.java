@@ -3,6 +3,7 @@ package mhm;
 //import mhm.item.ItemBroadSword;
 import mhm.item.ItemBroadSword;
 import mhm.lib.Reference;
+import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.Item;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Init;
@@ -22,7 +23,7 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 public class MonsterHunterMod {
 
     public final static int ITEM_ID = 5000;
-    public static Item broadSword = new ItemBroadSword(ITEM_ID);
+    public static Item broadSword = new ItemBroadSword(ITEM_ID, EnumToolMaterial.EMERALD);
 
     @Instance(Reference.MOD_ID)
     public static MonsterHunterMod instance;

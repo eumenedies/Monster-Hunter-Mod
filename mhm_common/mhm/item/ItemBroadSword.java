@@ -7,9 +7,9 @@ import net.minecraft.item.EnumToolMaterial;
 
 public class ItemBroadSword extends MHMSwordAndShield {
 
-    public ItemBroadSword(int id)
+    public ItemBroadSword(int id, EnumToolMaterial material)
     {
-        super(id, EnumToolMaterial.EMERALD);
+        super(id, material);
         this.setFull3D();
         this.setUnlocalizedName("broadsword");
         this.setCreativeTab(CreativeTabs.tabCombat);
