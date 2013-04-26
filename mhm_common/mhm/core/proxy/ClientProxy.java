@@ -20,7 +20,7 @@ public class ClientProxy extends CommonProxy {
     @Override
     public void registerHandlers()
     {
-        MinecraftForge.EVENT_BUS.register(new ShieldAttackHandler());
+        //MinecraftForge.EVENT_BUS.register(new ShieldAttackHandler());
     }
 
 }

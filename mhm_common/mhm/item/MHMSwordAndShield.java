@@ -3,7 +3,6 @@ package mhm.item;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.passive.EntityVillager;
 import net.minecraft.item.EnumToolMaterial;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 
