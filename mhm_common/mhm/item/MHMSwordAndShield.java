@@ -1,7 +1,9 @@
 package mhm.item;
 
+import mhm.MonsterHunterMod;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.passive.EntityVillager;
+import net.minecraft.item.EnumAction;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
@@ -24,6 +26,11 @@ public class MHMSwordAndShield extends ItemSword {
         {
             return false;
         }
+    }
+    
+    public EnumAction getItemUseAction(ItemStack par1ItemStack)
+    {
+        return MonsterHunterMod.shield;
     }
 
 }

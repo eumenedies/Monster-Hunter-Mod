@@ -2,9 +2,7 @@ package mhm.core.proxy;
 
 import mhm.MonsterHunterMod;
 import mhm.client.renderer.item.BroadSwordRenderer;
-import mhm.core.handlers.ShieldAttackHandler;
 import net.minecraftforge.client.MinecraftForgeClient;
-import net.minecraftforge.common.MinecraftForge;
 
 public class ClientProxy extends CommonProxy {
 
