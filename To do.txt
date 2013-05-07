@@ -1,0 +1,69 @@
+World Gen (redparry?)
+Plants(Like flax/corn?);
+	Herb 
+	Antidote Herb 
+	Fire Herb
+	Ivy (Like Vines/ Vines)
+	Sleep Herb
+	Sap Plant
+	Felvine
+	
+Mushrooms(Could Make Large);
+	Blue
+	Parashroom
+	ExciteShroom
+	Nitroshroom
+
+Seeds(bush?);
+	Paint Berry 
+	Might Seed 
+	Adamant Seed
+	
+	DragonBerry
+	Firedouse Berry
+	WaterBlock Seed
+	Stormsender Seed
+	Icethaw Pellet
+
+Ore's;
+	Machachite (Copper)
+	Dragonite (Ferrous/Nickel)
+	Pelagicite(Calcium?)
+
+	Carbalite(Titanium)
+	Bathycite(Purified Calcium?)
+	Firestone
+	
+Maybe World gen?
+
+Armour Modifiers(need armour first);
+	Armour Sphere
+	Armour Sphere +
+	Advanced Armour Sphere
+	Hard Armour Sphere
+	Heavy Armour Sphere
+
+
+
+
+
+
+
+
+Core Mechanics;
+	Elemental Attacks
+	Easy to create Duel weilded weapons
+	Entity AI
+
+
+Weapons;
+	1)Sword and Shield
+	2)Duel Swords
+	3)Great sword
+	4)Long Sword
+	5)Hammer
+	6)Lance
+	7)Gun Lance
+	8)SwitchAxe
+
+	Also ranged Weapons...
