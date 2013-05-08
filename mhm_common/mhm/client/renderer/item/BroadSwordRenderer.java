@@ -1,7 +1,6 @@
 package mhm.client.renderer.item;
 
 import mhm.client.model.ModelBroadSword;
-import mhm.client.model.ModelShield;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.IItemRenderer;
 
@@ -12,12 +11,10 @@ import cpw.mods.fml.client.FMLClientHandler;
 public class BroadSwordRenderer implements IItemRenderer {
 
     protected ModelBroadSword modelBroadSword;
-    protected ModelShield modelShield;
 
     public BroadSwordRenderer()
     {
         modelBroadSword = new ModelBroadSword();
-        modelShield = new ModelShield();
     }
 
     @Override
@@ -37,7 +34,7 @@ public class BroadSwordRenderer implements IItemRenderer {
     public boolean shouldUseRenderHelper(ItemRenderType type, ItemStack item,
             ItemRendererHelper helper)
     {
-        return false;
+        return true;
     }
 
     @Override
@@ -47,10 +44,10 @@ public class BroadSwordRenderer implements IItemRenderer {
         {
             case EQUIPPED:
             {
-                renderSword(-2.3F, -4.5F, 0.0F, 1.0F);
-                // renderShield(1.0F, 1.6F, -0.0F, 0.5F);
+                IItemRenderer customRenderer = new ShieldRenderer();
+                customRenderer.renderItem(type, item, data);
 
-                return;
+                renderSword(-2.3F, -4.5F, 0.0F, 1.0F);
             }
             default:
                 break;

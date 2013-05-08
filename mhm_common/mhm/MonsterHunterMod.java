@@ -1,6 +1,5 @@
 package mhm;
 
-import mhm.entity.EntityShield;
 import mhm.item.ItemBroadSword;
 import mhm.lib.Reference;
 import net.minecraft.item.EnumAction;
@@ -17,21 +16,21 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
-import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
 @NetworkMod(clientSideRequired = true, serverSideRequired = false)
 public class MonsterHunterMod {
-    
-    //needs to be moved//////////////////////////////////////////
+
+    // needs to be moved//////////////////////////////////////////
 
     public final static int ITEM_ID = 5000;
-    public static Item broadSword = new ItemBroadSword(ITEM_ID, EnumToolMaterial.EMERALD);
+    public static Item broadSword = new ItemBroadSword(ITEM_ID,
+            EnumToolMaterial.EMERALD);
     public static EnumAction shield = EnumHelper.addAction("shield");
-    
-    /////////////////////////////////////////////////////////////
+
+    // ///////////////////////////////////////////////////////////
     @Instance(Reference.MOD_ID)
     public static MonsterHunterMod instance;
 
@@ -41,7 +40,7 @@ public class MonsterHunterMod {
     @PreInit
     public void preInit(FMLPreInitializationEvent event)
     {
-        
+
     }
 
     @Init
@@ -50,15 +49,12 @@ public class MonsterHunterMod {
 
         LanguageRegistry.addName(broadSword, "Broad Sword");
 
-        //Probably Could Also Be Moved//////////////////////////////
+        // Probably Could Also Be Moved//////////////////////////////
         GameRegistry.registerItem(broadSword, "BroadSword");
-        
-        EntityRegistry.registerModEntity(EntityShield.class, "shield", 1, this, 10, 1, true);
-        ///////////////////////////////////////////////////////////
 
-        proxy.registerHandlers();
+        // /////////////////////////////////////////////////////////
+
         proxy.initRenderingAndTextures();
-       
 
     }
 
